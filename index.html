@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Based Interview</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: flex;
+            height: 100vh;
+        }
+        .left-section {
+            width: 40%;
+            background-color: #002F5E;
+            color: #69D45F;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 40px;
+        }
+        .left-section h1 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+        .left-section p {
+            color: white;
+            font-size: 14px;
+        }
+        .right-section {
+            width: 60%;
+            background-color: #F3F4F6;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .form-container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            width: 80%;
+        }
+        .form-container input, select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            border: 2px solid #69D45F;
+            border-radius: 5px;
+        }
+        .form-container label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+        .upload-btn {
+            margin-top: 10px;
+        }
+        .submit-btn {
+            width: 100%;
+            background-color: #69D45F;
+            color: white;
+            border: none;
+            padding: 15px;
+            font-size: 16px;
+            margin-top: 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .submit-btn:hover {
+            background-color: #57b54a;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left-section">
+            <h1>Create a <br> Resume Based Interview</h1>
+            <p>Efficient Initial Screening: A resume interview efficiently screens candidates based on their resume, providing a quick assessment of qualifications and potential alignment with the job.</p>
+        </div>
+        <div class="right-section">
+            <div class="form-container">
+                <label>Candidate Name*</label>
+                <input type="text" placeholder="Enter Candidate Name">
+
+                <label>Technology (Topic of Interview)*</label>
+                <input type="text" placeholder="Enter Technology">
+
+                <label>Select no. of Questions</label>
+                <select>
+                    <option>5 Questions</option>
+                    <option>10 Questions</option>
+                    <option>15 Questions</option>
+                </select>
+
+                <label>Select level of Interview</label>
+                <select>
+                    <option>Low</option>
+                    <option>Medium</option>
+                    <option>High</option>
+                </select>
+
+                <label>Select your Audio & Avatar</label>
+                <input type="text" placeholder="Select Avatar">
+
+                <label>Do you have a Resume?</label>
+                <input type="file" class="upload-btn">
+
+                <button class="submit-btn">New Interview</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
